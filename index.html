@@ -125,7 +125,8 @@
         </div>
     </section>
     <section id="add">
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+        <!-- <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500"> -->
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
             <div class="uk-card-media-left uk-cover-container">
                 <img src="img.jpg" alt="" uk-cover>
                 <canvas width="400" height="400"></canvas>
@@ -162,6 +163,18 @@
     <!-- Script For Animation -->
     <script>
         AOS.init();
+    </script>
+    <script>
+        var body = $("body, html");
+        var top = body.scrollTop() // Get position of the body
+        if (top != 0) {
+            body.animate({
+                scrollTop: 0
+            }, 500, function() {
+                //DO SOMETHING AFTER SCROLL ANIMATION COMPLETED
+                alert('Hello');
+            });
+        }
     </script>
 </body>
 
