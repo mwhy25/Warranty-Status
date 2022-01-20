@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GARANSI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --brown-color: #70675e;
+            --dark-blue: #429ec9;
+            --light-blue: #E2E3E8;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .uk-background-brown {
+            background-color: var(--brown-color);
+        }
+        
+        .uk-background-dblue {
+            background-color: var(--dark-blue);
+        }
+        
+        .uk-background-lblue {
+            background-color: var(--light-blue);
+        }
+        
+        .text-border {
+            text-shadow: 0 0 3px #000000;
+            color: white;
+            /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+        }
+        
+        .uk-onleft {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -20%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="navbar">
+        <div class="uk-section-muted uk-dark uk-preserve-color">
+            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+
+                <nav class="uk-navbar-container">
+                    <div class="uk-container uk-container-expand">
+                        <div uk-navbar>
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="support.html">Support</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section id="cover">
+        <div class="uk-background-center-center uk-height-large uk-width-1-1 uk-flex uk-flex-center uk-flex-middle" style="background-image: url(support.jpg); width:100%;background-size: cover;">
+            <h1 class="text-border uk-onleft"><strong>Contact Support</strong> </h1>
+
+        </div>
+    </section>
+    <section id="content">
+        <div class="uk-section-default ">
+            <!-- <div class="uk-section uk-light uk-background-cover " style="background-image: url(background.jpg)"> -->
+            <div class="uk-section uk-dark uk-background-lblue">
+                <div class="uk-container">
+                    <div class="uk-panel uk-margin-bottom">
+                        <div class="uk-inline">
+                            <span uk-icon="icon: gitter; ratio: 3.5"></span>
+                            <span class="uk-heading-small">Contact</span>
+                        </div>
+                        <p>If you have a question or need a troubleshoot you can fill the form or contact our support</p>
+                    </div>
+
+                    <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+                        <div class="uk-width-1-2@m">
+
+                            <form class="uk-form-horizontal uk-margin-large">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Name *</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" required placeholder="Name...">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Company</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" placeholder="Some text...">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Email *</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="email" required placeholder="Some text...">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Telephone *</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="tel" required placeholder="Some text...">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Subject </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" required placeholder="Some text...">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label">Message *</label>
+                                    <div class="uk-form-controls">
+                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="uk-button uk-button-primary uk-width-1-1"> Send</button>
+                            </form>
+                        </div>
+                        <div class="uk-width-1-2@m ">
+                            <div class="uk-card uk-card-default ">
+                                <div class="uk-card-header ">
+                                    <h3 class="uk-card-title ">Garansi Informasi</h3>
+                                </div>
+                                <div class="uk-card-body ">
+                                    <form class="uk-form-horizontal uk-margin-large ">
+                                        <div class="uk-margin ">
+                                            <label class="uk-form-label " for="form-horizontal-text ">Text</label>
+                                            <div class="uk-form-controls ">
+                                                <input class="uk-input " id="form-horizontal-text " type="text " placeholder="Some text... ">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin ">
+                                            <label class="uk-form-label " for="form-horizontal-select ">Select</label>
+                                            <div class="uk-form-controls ">
+                                                <select class="uk-select " id="form-horizontal-select ">
+                                                    <option>Option 01</option>
+                                                    <option>Option 02</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin ">
+                                            <div class="uk-form-label ">Radio</div>
+                                            <div class="uk-form-controls uk-form-controls-text ">
+                                                <label><input class="uk-radio " type="radio " name="radio1 "> Option 01</label><br>
+                                                <label><input class="uk-radio " type="radio " name="radio1 "> Option 02</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="uk-section uk-background-secondary ">
+            <div class="uk-container uk-width-1-1 ">
+                © 2021 DUTA FUJI ELECTRIC. Semua Hak, Milik Persyaratan penggunaan | kebijakan privasi | Peta situs | Kompatibilitas browser
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
