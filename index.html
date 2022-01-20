@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
          :root {
             --brown-color: #70675e;
@@ -121,23 +125,23 @@
         </div>
     </section>
     <section id="add">
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
             <div class="uk-card-media-left uk-cover-container">
                 <img src="img.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
+                <canvas width="400" height="400"></canvas>
             </div>
             <div>
-                <div class="uk-card-body">
+                <div class="uk-card-body" data-aos="fade-left">
                     <h3 class="uk-card-title">Media Left</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
         </div>
 
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
             <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
                 <img src="img.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
+                <canvas width="400" height="400"></canvas>
             </div>
             <div>
                 <div class="uk-card-body">
@@ -155,6 +159,10 @@
             </div>
         </div>
     </footer>
+    <!-- Script For Animation -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
