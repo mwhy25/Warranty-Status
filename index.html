@@ -22,10 +22,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
-         :root {
-            --brown-color: #70675e;
-            --dark-blue: #429ec9;
-            --light-blue: #E2E3E8;
+        footer {
+            background-color: #28342f;
         }
         
         body {
@@ -49,51 +47,33 @@
             color: white;
             /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
         }
+        
+        #mapID {
+            -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+        }
     </style>
 </head>
 
 <body>
-
     <section id="navbar">
-        <div class="uk-section-muted uk-dark uk-preserve-color">
-            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
-
-                <nav class="uk-navbar-container">
-                    <div class="uk-container uk-container-expand">
-                        <div uk-navbar>
-
+        <div class="uk-height-large " style="background-image: url(cover.jpg);width: 100%;background-size: cover;">
+            <div class="uk-container">
+                <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="index.html">Home</a></li>
-                                <li>
-                                    <a href="#">Parent</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#">Active</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li><a href="#">Item</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="support.html">Support</a></li>
+                                <li class="uk-active"><a>HOME</a></li>
                             </ul>
-
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+                <h1 class="text-border uk-text-center"><strong>DUTA FUJI ELECTRIC</strong> </h1>
             </div>
-        </div>
-    </section>
-    <section id="cover">
-        <div class="uk-background-blend-hard-light uk-background-dblue uk-background-fixed uk-background-center-center uk-height-large uk-width-1-1 uk-flex uk-flex-center uk-flex-middle" style="background-image: url(cover.jpg); width:100%;background-size: cover;">
-            <h1 class="text-border"><strong>FUJI ELECTRIC</strong> </h1>
-
-        </div>
     </section>
     <section id="content">
         <div class="uk-section-default ">
-            <!-- <div class="uk-section uk-light uk-background-cover " style="background-image: url(background.jpg)"> -->
-            <div class="uk-section uk-dark uk-background-lblue">
+            <div class="uk-section uk-dark">
                 <div class="uk-container">
                     <h1>Pengecekan Status Garansi</h1>
                     <div class="uk-child-width-expand@s uk-text-center" uk-grid>
@@ -124,58 +104,22 @@
             </div>
         </div>
     </section>
-    <section id="add">
-        <!-- <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500"> -->
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-            <div class="uk-card-media-left uk-cover-container">
-                <img src="img.jpg" alt="" uk-cover>
-                <canvas width="400" height="400"></canvas>
-            </div>
-            <div>
-                <div class="uk-card-body" data-aos="fade-left">
-                    <h3 class="uk-card-title">Media Left</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                <img src="img.jpg" alt="" uk-cover>
-                <canvas width="400" height="400"></canvas>
+    <footer class="uk-section uk-container uk-width-1-1">
+        <div uk-grid>
+            <div class="uk-light uk-width-1-2">
+                <h2>PT Duta Fuji Electric</h2>
+                <p>Jl. Hayam Wuruk 4F<br>Kebon Kelapa, Jakarta Pusat<br>Indonesia, 10120<br>Phone +62 21 3840834</p>
             </div>
-            <div>
-                <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Right</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
+            <div class="uk-width-1-2">
+                <img class="uk-align-right" id="mapID" src="indomap.png" alt="Map Indonesia">
             </div>
         </div>
-    </section>
-    <footer>
-
-        <div class="uk-section uk-background-secondary ">
-            <div class="uk-container uk-width-1-1	">
-                © 2021 DUTA FUJI ELECTRIC. Semua Hak, Milik Persyaratan penggunaan | kebijakan privasi | Peta situs | Kompatibilitas browser
-            </div>
-        </div>
+        <h5 class="uk-light">
+            © 2021 DUTA FUJI ELECTRIC. Semua Hak, Milik Persyaratan penggunaan | kebijakan privasi | Peta situs | Kompatibilitas browser
+        </h5>
     </footer>
-    <!-- Script For Animation -->
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        var body = $("body, html");
-        var top = body.scrollTop() // Get position of the body
-        if (top != 0) {
-            body.animate({
-                scrollTop: 0
-            }, 500, function() {
-                //DO SOMETHING AFTER SCROLL ANIMATION COMPLETED
-                alert('Hello');
-            });
-        }
-    </script>
+
 </body>
 
 </html>
