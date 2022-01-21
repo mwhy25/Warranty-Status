@@ -19,9 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <style>
          :root {
-            --brown-color: #70675e;
+            /* --brown-color: #8d857e; */
+            --brown-color: #b4a283;
             --dark-blue: #429ec9;
             --light-blue: #E2E3E8;
+        }
+        
+        footer {
+            background-color: #28342f;
         }
         
         body {
@@ -58,45 +63,26 @@
 <body>
 
     <section id="navbar">
-        <div class="uk-section-muted uk-dark uk-preserve-color">
-            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
-
-                <nav class="uk-navbar-container">
-                    <div class="uk-container uk-container-expand">
-                        <div uk-navbar>
-
+        <div class="uk-height-large " style="background-image: url(support.jpg);width: 100%;background-size: cover;">
+            <div class="uk-container">
+                <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="index.html">Home</a></li>
-                                <li>
-                                    <a href="#">Parent</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#">Active</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li><a href="#">Item</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">Item</a></li>
+                                <li class="uk-active"><a href="index.html">HOME</a></li>
                                 <li><a href="support.html">Support</a></li>
+                                <li><a href="login.html">Login</a></li>
                             </ul>
-
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+                <h1 class="text-border uk-text-left"><strong>Contact Support</strong> </h1>
             </div>
-        </div>
-    </section>
-    <section id="cover">
-        <div class="uk-background-center-center uk-height-large uk-width-1-1 uk-flex uk-flex-center uk-flex-middle" style="background-image: url(support.jpg); width:100%;background-size: cover;">
-            <h1 class="text-border uk-onleft"><strong>Contact Support</strong> </h1>
-
-        </div>
     </section>
     <section id="content">
         <div class="uk-section-default ">
             <!-- <div class="uk-section uk-light uk-background-cover " style="background-image: url(background.jpg)"> -->
-            <div class="uk-section uk-dark uk-background-lblue">
+            <div class="uk-section uk-dark ">
                 <div class="uk-container">
                     <div class="uk-panel uk-margin-bottom">
                         <div class="uk-inline">
@@ -169,13 +155,19 @@
         </div>
     </section>
 
-    <footer>
-
-        <div class="uk-section uk-background-secondary ">
-            <div class="uk-container uk-width-1-1 ">
-                © 2021 DUTA FUJI ELECTRIC. Semua Hak, Milik Persyaratan penggunaan | kebijakan privasi | Peta situs | Kompatibilitas browser
+    <footer class="uk-section uk-container uk-width-1-1">
+        <div uk-grid>
+            <div class="uk-light uk-width-1-2">
+                <h2>PT Duta Fuji Electric</h2>
+                <p>Jl. Hayam Wuruk 4F<br>Kebon Kelapa, Jakarta Pusat<br>Indonesia, 10120<br>Phone +62 21 3840834</p>
+            </div>
+            <div class="uk-width-1-2">
+                <img class="uk-align-right" id="mapID" src="indomap.png" alt="Map Indonesia">
             </div>
         </div>
+        <h5 class="uk-light">
+            © 2021 DUTA FUJI ELECTRIC. Semua Hak, Milik Persyaratan penggunaan | kebijakan privasi | Peta situs | Kompatibilitas browser
+        </h5>
     </footer>
 </body>
 
