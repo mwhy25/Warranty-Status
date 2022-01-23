@@ -9,6 +9,8 @@ body {
     background-color: var(--white-primary);
     font-family: "Jost", sans-serif;
     color: var(--text-primary);
+    margin: 0;
+    padding: 0;
 }
 
 .bg-back {
@@ -93,6 +95,16 @@ div>h1 {
     color: var(--text-primary) !important;
 }
 
+.txt-gray {
+    color: var(--dark-primary);
+}
+
 .shadow-light {
     text-shadow: 1px 2px var(--white-primary);
+}
+
+footer {
+    background-color: var(--dark-primary);
+    margin: 0;
+    padding: 0;
 }
