@@ -49,9 +49,8 @@ body {
     left: 0; */
 }
 
-.wow {
+.contact-form {
     display: block;
-    background-color: black;
 }
 
 .bg-support>div {
@@ -81,4 +80,8 @@ div>p {
 
 .nav-link:hover {
     background-color: #61646b54;
+}
+
+.head {
+    color: var(--text-primary) !important;
 }
