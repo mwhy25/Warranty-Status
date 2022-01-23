@@ -31,6 +31,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.wrapper {
+    height: 100%;
+    /* position: relative; */
+}
+
+.bg-support {
+    background-image: url(img/support.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.wow {
+    display: block;
+    background-color: black;
+}
+
+.bg-support>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 div>h1 {
     font-size: 64px;
     font-weight: 700;
@@ -50,5 +80,5 @@ div>p {
 }
 
 .nav-link:hover {
-    background-color: var(--dark-primary);
+    background-color: #61646b54;
 }
