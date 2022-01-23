@@ -67,9 +67,11 @@ div>h1 {
     text-shadow: 1px 2px var(--dark-primary);
 }
 
-div>h3,
-div>p {
+.txt-light {
     color: var(--white-primary);
+}
+
+.shadow-dark {
     text-shadow: 1px 2px var(--dark-primary);
 }
 
@@ -78,10 +80,19 @@ div>p {
     float: right;
 }
 
+.navbar-brand,
+.nav-link {
+    font-size: 24px;
+}
+
 .nav-link:hover {
     background-color: #61646b54;
 }
 
-.head {
+.txt-dark {
     color: var(--text-primary) !important;
+}
+
+.shadow-light {
+    text-shadow: 1px 2px var(--white-primary);
 }
