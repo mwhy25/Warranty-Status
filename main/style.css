@@ -1,0 +1,54 @@
+:root {
+    --button-primary: #3e3fd8;
+    --white-primary: #eef4ff;
+    --text-primary: #2e323b;
+    --dark-primary: #61646b;
+}
+
+body {
+    background-color: var(--white-primary);
+    font-family: "Jost", sans-serif;
+    color: var(--text-primary);
+}
+
+.bg-back {
+    background-image: url(img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-back>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div>h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--white-primary);
+    text-shadow: 1px 2px var(--dark-primary);
+}
+
+div>h3,
+div>p {
+    color: var(--white-primary);
+    text-shadow: 1px 2px var(--dark-primary);
+}
+
+#onleft {
+    display: flex;
+    float: right;
+}
+
+.nav-link:hover {
+    background-color: var(--dark-primary);
+}
