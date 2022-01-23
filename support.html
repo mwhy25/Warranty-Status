@@ -17,47 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <style>
-         :root {
-            /* --brown-color: #8d857e; */
-            --brown-color: #b4a283;
-            --dark-blue: #429ec9;
-            --light-blue: #E2E3E8;
-        }
-        
-        footer {
-            background-color: #28342f;
-        }
-        
-        body {
-            font-family: 'Lato', sans-serif;
-        }
-        
-        .uk-background-brown {
-            background-color: var(--brown-color);
-        }
-        
-        .uk-background-dblue {
-            background-color: var(--dark-blue);
-        }
-        
-        .uk-background-lblue {
-            background-color: var(--light-blue);
-        }
-        
-        .text-border {
-            text-shadow: 0 0 3px #000000;
-            color: white;
-            /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
-        }
-        
-        .uk-onleft {
-            position: absolute;
-            top: 50%;
-            left: 20%;
-            transform: translate(-50%, -20%);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -71,27 +31,26 @@
                             <ul class="uk-navbar-nav">
                                 <li class="uk-active"><a href="index.html">HOME</a></li>
                                 <li><a href="support.html">Support</a></li>
-                                <li><a href="login.html">Login</a></li>
+                                <li><a href="pages/auth-signin.html">Login</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <h1 class="text-border uk-text-left"><strong>Contact Support</strong> </h1>
+                <h1 class="text-border uk-text-left "><strong>Contact Support</strong> </h1>
             </div>
+        </div>
     </section>
     <section id="content">
-        <div class="uk-section-default ">
-            <!-- <div class="uk-section uk-light uk-background-cover " style="background-image: url(background.jpg)"> -->
-            <div class="uk-section uk-dark ">
+        <div class="uk-section-default uk-padding-small">
+            <div class="uk-section uk-dark">
                 <div class="uk-container">
                     <div class="uk-panel uk-margin-bottom">
                         <div class="uk-inline">
                             <span uk-icon="icon: gitter; ratio: 3.5"></span>
-                            <span class="uk-heading-small">Contact</span>
+                            <span class="uk-heading-small txt-head">Contact</span>
                         </div>
                         <p>If you have a question or need a troubleshoot you can fill the form or contact our support</p>
                     </div>
-
                     <div class="uk-child-width-expand@s uk-text-left" uk-grid>
                         <div class="uk-width-1-2@m">
 
