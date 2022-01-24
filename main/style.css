@@ -3,6 +3,7 @@
     --white-primary: #eef4ff;
     --text-primary: #2e323b;
     --dark-primary: #61646b;
+    --dark-absol: black;
 }
 
 body {
@@ -11,6 +12,12 @@ body {
     color: var(--text-primary);
     margin: 0;
     padding: 0;
+}
+
+.bg-blur {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .bg-back {
@@ -51,15 +58,35 @@ body {
     left: 0; */
 }
 
-.contact-form {
-    display: block;
-}
-
 .bg-support>div {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.bg-warrant {
+    background-image: url(img/warrant.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.bg-warrant>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-form {
+    display: block;
 }
 
 div>h1 {
@@ -99,12 +126,25 @@ div>h1 {
     color: var(--dark-primary);
 }
 
+.txt-black {
+    color: var(--dark-absol);
+}
+
 .shadow-light {
     text-shadow: 1px 2px var(--white-primary);
+}
+
+.shadow-gray {
+    text-shadow: 1px 2px var(--dark-primary);
 }
 
 footer {
     background-color: var(--dark-primary);
     margin: 0;
     padding: 0;
+}
+
+#mapID {
+    display: flex;
+    float: right;
 }
