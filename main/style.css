@@ -149,6 +149,12 @@ footer {
     float: right;
 }
 
+.navbar-toggler-icon {
+    background-color: #1d2b599a;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
 .txt-green {
     color: greenyellow;
 }
