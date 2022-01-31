@@ -203,12 +203,11 @@ footer {
     margin: 20px;
 }
 
-
-/* .float-right {
+.float-right {
     display: flex;
     float: right;
     margin: 20px;
-} */
+}
 
 .float-middle {
     display: block;
@@ -225,4 +224,8 @@ footer {
         width: 100%;
         object-fit: cover;
     }
+}
+
+.welcome {
+    word-spacing: 200px;
 }
