@@ -40,7 +40,7 @@ body {
 }
 
 .intro-up {
-    visibility: hidden;
+    opacity: 0;
     animation-name: intro-up;
     animation-delay: 1s;
     animation-duration: 1s;
@@ -59,11 +59,11 @@ body {
 
 @keyframes intro-up {
     from {
-        transform: translateY(200px);
+        transform: translate3d(0px, 20px, 200px);
     }
     to {
-        transform: translateY(0px);
-        visibility: visible;
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
     }
 }
 
