@@ -33,6 +33,40 @@ body {
     left: 0;
 }
 
+.intro {
+    animation-name: intro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.intro-up {
+    visibility: hidden;
+    animation-name: intro-up;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes intro {
+    from {
+        transform: scale(2, 2);
+        overflow: auto;
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes intro-up {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
 .bg-back>div {
     position: absolute;
     left: 50%;
@@ -166,5 +200,29 @@ footer {
 .float-left {
     display: flex;
     float: left;
-    margin-right: 20px;
+    margin: 20px;
+}
+
+
+/* .float-right {
+    display: flex;
+    float: right;
+    margin: 20px;
+} */
+
+.float-middle {
+    display: block;
+}
+
+#img-responsive {
+    width: 300px;
+    height: 300px;
+    position: center;
+}
+
+@media screen and (max-width: 912px) {
+    #img-responsive {
+        width: 100%;
+        object-fit: cover;
+    }
 }
